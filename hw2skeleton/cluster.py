@@ -7,12 +7,13 @@ def compute_similarity(site_a, site_b):
     Input: two ActiveSite instances
     Output: the similarity between them (a floating point number)
     """
-
+    site_a.Residue(type, 1)
+    site_b.Residue(type, 2)
     similarity = 0.0
 
     # Fill in your code here!
-
-    return similarity
+    return [site_a, site_b]
+    #return similarity
 
 
 def cluster_by_partitioning(active_sites):
@@ -25,8 +26,14 @@ def cluster_by_partitioning(active_sites):
             ActiveSite instances)
     """
     # Fill in your code here!
-
-    return []
+    list_of_pairs = []
+    for i in range( 0, len(active_sites) ):
+        for j in range( i, len(active_sites) ):
+            pair = [ active_sites[i], active_sites[j] ]
+            site_a = ActiveSite( str(pair[0]) )
+            site_b = ActiveSite( str(pair[1]) )
+            
+    return [site_a.name, Residue]
 
 
 def cluster_hierarchically(active_sites):
