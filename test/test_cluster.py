@@ -24,9 +24,9 @@ def test_partition_clustering():
         active_sites.append(io.read_active_site(filepath))
 
     # update this assertion
-    label=cluster.cluster_by_partitioning(active_sites, 3)
+    label=cluster.cluster_by_partitioning(active_sites, 2)
     #assert cluster.cluster_by_partitioning(active_sites) == []
-    assert all(label == [0, 2, 1])
+    assert all(label[1] == [0, 0, 1])
 
 def test_hierarchical_clustering():
     random.seed(40)
@@ -40,4 +40,4 @@ def test_hierarchical_clustering():
 
     # update this assertion
     label=cluster.cluster_hierarchically(active_sites)
-    assert all(label == [0, 0, 1])
+    assert all(label[1] == [0, 0, 1])
