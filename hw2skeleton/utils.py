@@ -1,5 +1,5 @@
 # Some utility classes to represent a PDB structure
-
+import numpy as np
 class Atom:
     """
     A simple class for an amino acid residue
@@ -7,8 +7,8 @@ class Atom:
 
     def __init__(self, type):
         self.type = type
-        self.coords = (0.0, 0.0, 0.0)
-
+        #self.coords = (0.0, 0.0, 0.0)
+        self.coords = np.zeros(3)
     # Overload the __repr__ operator to make printing simpler.
     def __repr__(self):
         return self.type

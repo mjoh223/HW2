@@ -3,6 +3,7 @@ from hw2skeleton import io
 import os
 
 def test_similarity():
+    #set seed here
     filename_a = os.path.join("data", "276.pdb")
     filename_b = os.path.join("data", "4629.pdb")
 
