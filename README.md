@@ -1,4 +1,4 @@
-# HW2 Skeleton
+# HW2
 
 [![Build
 Status](https://travis-ci.org/mjoh223/HW2.svg?branch=master)](https://travis-ci.org/mjoh223/HW2)
