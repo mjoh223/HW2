@@ -6,9 +6,6 @@ from sklearn.cluster import KMeans
 from sklearn.cluster import AgglomerativeClustering
 from sklearn.metrics import silhouette_score
 from sklearn.decomposition import PCA
-import seaborn as sns
-import matplotlib
-matplotlib.use("TkAgg")
 def compute_similarity(site_a, site_b):
     """
     Compute the similarity between two given ActiveSite instances.

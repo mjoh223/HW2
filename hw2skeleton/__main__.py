@@ -1,9 +1,6 @@
 import sys
 from .io import read_active_sites, write_clustering, write_mult_clusterings
 from .cluster import compute_similarity, cluster_by_partitioning, cluster_hierarchically, silhouette, pca
-import matplotlib
-matplotlib.use("TkAgg")
-import seaborn as sns
 
 # Some quick stuff to make sure the program is called correctly
 if len(sys.argv) < 4:
